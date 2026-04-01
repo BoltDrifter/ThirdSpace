@@ -805,13 +805,13 @@ class AppState extends ChangeNotifier {
   }
 
   // ── Update Profile ──
-  Future<void> updateProfile({String? name, String? photoUrl}) async {
+  Future<void> updateProfile({String? name, String? photoUrl, String? username}) async {
     if (_firebaseUser == null) return;
-    
+
     final newName = (name != null && name.isNotEmpty) ? name.trim() : _firebaseUser!.displayName ?? 'ThirdSpace User';
     final newPhotoUrl = (photoUrl != null && photoUrl.isNotEmpty) ? photoUrl.trim() : null;
 
-    // 1. Optimistically update local state so UI reflects instantly 
+    // 1. Optimistically update local state so UI reflects instantly
     // without waiting for Firebase or throwing exceptions
     if (_userProfile != null) {
       _userProfile = _userProfile!.copyWith(
@@ -822,7 +822,7 @@ class AppState extends ChangeNotifier {
     }
 
     // 2. Wrap the buggy firebase_auth platform code in its own try/catch
-    // This allows it to fail silently on older pigeon bindings without 
+    // This allows it to fail silently on older pigeon bindings without
     // crashing the rest of the profile update process.
     try {
       if (name != null) await _firebaseUser!.updateDisplayName(newName);
@@ -850,11 +850,47 @@ class AppState extends ChangeNotifier {
           photoUrl: newPhotoUrl,
         );
       }
-      
-      showToast('Profile updated successfully! ✨');
+
       notifyListeners();
     } catch (e) {
       showToast('Failed to update profile: $e');
+      return;
+    }
+
+    // 4. Handle username change if provided
+    if (username != null && username.isNotEmpty && username != _userProfile?.username) {
+      try {
+        await claimUsernameForCurrentUser(username);
+        showToast('Profile updated successfully! ✨');
+      } catch (_) {
+        // claimUsernameForCurrentUser already shows a toast on failure
+      }
+    } else {
+      showToast('Profile updated successfully! ✨');
+    }
+  }
+
+  // ── Claim Username ──
+  Future<void> claimUsernameForCurrentUser(String username) async {
+    if (_firebaseUser == null) return;
+    final oldUsername = _userProfile?.username;
+    try {
+      await _firebaseService.claimUsername(
+        userId: _firebaseUser!.uid,
+        username: username,
+        oldUsername: (oldUsername != null && oldUsername.isNotEmpty) ? oldUsername : null,
+      );
+      if (_userProfile != null) {
+        _userProfile = _userProfile!.copyWith(username: username.toLowerCase());
+        notifyListeners();
+      }
+    } catch (e) {
+      if (e.toString().contains('username-taken')) {
+        showToast('That username is already taken. Try another.');
+      } else {
+        showToast('Failed to save username: $e');
+      }
+      rethrow;
     }
   }
 }

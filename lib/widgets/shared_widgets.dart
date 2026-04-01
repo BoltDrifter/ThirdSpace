@@ -6,6 +6,7 @@
 // ============================================================
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show TextInputFormatter;
 import 'package:google_fonts/google_fonts.dart';
 import '../core/theme.dart';
 import '../core/models.dart';
@@ -513,4 +514,27 @@ class GradientAvatar extends StatelessWidget {
       ),
     );
   }
+}
+
+// ─────────────────────────────────────────────────────────────
+// USERNAME UTILITIES — shared across signup and profile screens
+// ─────────────────────────────────────────────────────────────
+
+/// Forces all input to lowercase. Use as: inputFormatters: [lowercaseFormatter]
+final TextInputFormatter lowercaseFormatter = TextInputFormatter.withFunction(
+  (_, newValue) => newValue.copyWith(
+    text: newValue.text.toLowerCase(),
+    selection: newValue.selection,
+  ),
+);
+
+/// Returns an error string if [value] is not a valid username, null if valid.
+/// Rules: 3–20 chars, only lowercase letters, numbers, underscores.
+String? validateUsernameFormat(String value) {
+  if (value.length < 3) return 'At least 3 characters required.';
+  if (value.length > 20) return 'Maximum 20 characters.';
+  if (!RegExp(r'^[a-z0-9_]+$').hasMatch(value)) {
+    return 'Only lowercase letters, numbers, and underscores.';
+  }
+  return null;
 }

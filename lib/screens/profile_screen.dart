@@ -150,6 +150,18 @@ class ProfileScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  if (profile.username.isNotEmpty) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      '@${profile.username}',
+                      style: GoogleFonts.inter(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w500,
+                        color: TSColors.primary.withOpacity(0.85),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
                   if (user?.email != null) ...[
                     const SizedBox(height: 4),
                     Text(
@@ -500,6 +512,7 @@ class ProfileScreen extends StatelessWidget {
 
   void _showEditProfileDialog(BuildContext context, AppState state) {
     final nameController = TextEditingController(text: state.userProfile?.name ?? '');
+    final usernameController = TextEditingController(text: state.userProfile?.username ?? '');
     final photoUrlController = TextEditingController(text: state.userProfile?.photoUrl ?? '');
 
     showDialog(
@@ -525,6 +538,26 @@ class ProfileScreen extends StatelessWidget {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: TSColors.surfaceContainerHigh,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide.none,
+                ),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              ),
+            ),
+            const SizedBox(height: 16),
+            Text('Username', style: Theme.of(ctx).textTheme.bodySmall),
+            const SizedBox(height: 8),
+            TextField(
+              controller: usernameController,
+              autocorrect: false,
+              style: TextStyle(color: TSColors.onSurface),
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: TSColors.surfaceContainerHigh,
+                hintText: 'your_handle',
+                hintStyle: TextStyle(color: TSColors.onSurfaceVariant),
+                prefixIcon: Icon(Icons.alternate_email_rounded, color: TSColors.onSurfaceVariant, size: 18),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide.none,
@@ -565,11 +598,12 @@ class ProfileScreen extends StatelessWidget {
           ),
           TextButton(
             onPressed: () {
+              Navigator.pop(ctx);
               state.updateProfile(
                 name: nameController.text.trim(),
                 photoUrl: photoUrlController.text.trim(),
+                username: usernameController.text.trim().toLowerCase(),
               );
-              Navigator.pop(ctx);
             },
             child: Text(
               'Save',
@@ -581,7 +615,11 @@ class ProfileScreen extends StatelessWidget {
           ),
         ],
       ),
-    );
+    ).then((_) {
+      nameController.dispose();
+      usernameController.dispose();
+      photoUrlController.dispose();
+    });
   }
 }
 

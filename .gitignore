@@ -41,3 +41,6 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local Claude MCP settings may contain API keys
+.claude/settings.local.json

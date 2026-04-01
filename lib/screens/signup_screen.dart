@@ -6,12 +6,15 @@
 /// ============================================================
 library;
 
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
 
 import '../core/theme.dart';
 import '../services/auth_service.dart';
+import '../services/firebase_service.dart';
 import '../widgets/shared_widgets.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -24,7 +27,9 @@ class SignUpScreen extends StatefulWidget {
 class _SignUpScreenState extends State<SignUpScreen>
     with SingleTickerProviderStateMixin {
   final _authService = AuthService();
+  final _firebaseService = FirebaseDataService();
   final _nameController = TextEditingController();
+  final _usernameController = TextEditingController();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
@@ -32,6 +37,9 @@ class _SignUpScreenState extends State<SignUpScreen>
   bool _obscurePassword = true;
   bool _obscureConfirm = true;
   String? _errorMessage;
+  bool? _usernameAvailable; // null = unchecked, true = available, false = taken
+  bool _usernameChecking = false;
+  Timer? _usernameDebounce;
   late AnimationController _fadeController;
   late Animation<double> _fadeAnimation;
 
@@ -51,7 +59,9 @@ class _SignUpScreenState extends State<SignUpScreen>
 
   @override
   void dispose() {
+    _usernameDebounce?.cancel();
     _nameController.dispose();
+    _usernameController.dispose();
     _emailController.dispose();
     _passwordController.dispose();
     _confirmPasswordController.dispose();
@@ -59,18 +69,40 @@ class _SignUpScreenState extends State<SignUpScreen>
     super.dispose();
   }
 
+
+  void _onUsernameChanged(String value) {
+    _usernameDebounce?.cancel();
+    if (validateUsernameFormat(value) != null) {
+      setState(() { _usernameAvailable = null; _usernameChecking = false; });
+      return;
+    }
+    setState(() => _usernameChecking = true);
+    _usernameDebounce = Timer(const Duration(milliseconds: 500), () async {
+      final available = await _firebaseService.isUsernameAvailable(value);
+      if (mounted) setState(() { _usernameAvailable = available; _usernameChecking = false; });
+    });
+  }
+
   Future<void> _signUp() async {
+    final username = _usernameController.text.trim();
+
     // Validate fields
     if (_nameController.text.trim().isEmpty ||
+        username.isEmpty ||
         _emailController.text.trim().isEmpty ||
         _passwordController.text.isEmpty) {
       setState(() => _errorMessage = 'Please fill in all fields.');
       return;
     }
 
+    final usernameError = validateUsernameFormat(username);
+    if (usernameError != null) {
+      setState(() => _errorMessage = usernameError);
+      return;
+    }
+
     if (_passwordController.text.length < 6) {
-      setState(
-          () => _errorMessage = 'Password must be at least 6 characters.');
+      setState(() => _errorMessage = 'Password must be at least 6 characters.');
       return;
     }
 
@@ -79,28 +111,43 @@ class _SignUpScreenState extends State<SignUpScreen>
       return;
     }
 
-    setState(() {
-      _isLoading = true;
-      _errorMessage = null;
-    });
+    setState(() { _isLoading = true; _errorMessage = null; });
 
     try {
-      await _authService.signUp(
+      // Final availability check before creating the account
+      final available = await _firebaseService.isUsernameAvailable(username);
+      if (!available) {
+        setState(() => _errorMessage = 'That username is already taken. Please choose another.');
+        return;
+      }
+
+      final credential = await _authService.signUp(
         email: _emailController.text,
         password: _passwordController.text,
         name: _nameController.text,
       );
+
+      final uid = credential.user?.uid;
+      if (uid != null) {
+        await _firebaseService.claimUsername(userId: uid, username: username);
+        await _firebaseService.saveUserProfile(
+          userId: uid,
+          name: _nameController.text.trim(),
+          email: _emailController.text.trim(),
+          username: username,
+        );
+      }
+
       // Auth state listener in AppState handles navigation
-      // Pop back so we don't stack screens
       if (mounted) Navigator.of(context).popUntil((route) => route.isFirst);
     } on fb_auth.FirebaseAuthException catch (e) {
-      setState(() {
-        _errorMessage = _getErrorMessage(e.code);
-      });
+      setState(() { _errorMessage = _getErrorMessage(e.code); });
     } catch (e) {
-      setState(() {
-        _errorMessage = 'An unexpected error occurred.';
-      });
+      if (e.toString().contains('username-taken')) {
+        setState(() => _errorMessage = 'That username was just taken. Please choose another.');
+      } else {
+        setState(() => _errorMessage = 'An unexpected error occurred.');
+      }
     } finally {
       if (mounted) setState(() => _isLoading = false);
     }
@@ -244,6 +291,36 @@ class _SignUpScreenState extends State<SignUpScreen>
                     .textTheme
                     .bodyLarge
                     ?.copyWith(color: TSColors.onSurface),
+              ),
+              const SizedBox(height: 20),
+
+              // ── Username Field ──
+              _FieldLabel('Username'),
+              const SizedBox(height: 8),
+              TextField(
+                controller: _usernameController,
+                autocorrect: false,
+                inputFormatters: [lowercaseFormatter],
+                onChanged: _onUsernameChanged,
+                decoration: InputDecoration(
+                  hintText: 'your_handle',
+                  prefixIcon: const Icon(Icons.alternate_email_rounded, color: TSColors.onSurfaceVariant, size: 20),
+                  prefixIconConstraints: const BoxConstraints(minWidth: 52),
+                  suffixIcon: _usernameChecking
+                      ? const Padding(
+                          padding: EdgeInsets.all(14),
+                          child: SizedBox(
+                            width: 16, height: 16,
+                            child: CircularProgressIndicator(strokeWidth: 2, color: TSColors.onSurfaceVariant),
+                          ),
+                        )
+                      : _usernameAvailable == true
+                          ? const Icon(Icons.check_circle_rounded, color: Color(0xFF4CAF50), size: 20)
+                          : _usernameAvailable == false
+                              ? const Icon(Icons.cancel_rounded, color: TSColors.error, size: 20)
+                              : null,
+                ),
+                style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: TSColors.onSurface),
               ),
               const SizedBox(height: 20),
 
@@ -490,6 +567,7 @@ class _SignUpScreenState extends State<SignUpScreen>
     );
   }
 }
+
 
 class _FieldLabel extends StatelessWidget {
   final String text;

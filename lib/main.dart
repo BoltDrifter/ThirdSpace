@@ -19,6 +19,7 @@ import 'core/theme.dart';
 import 'core/app_state.dart';
 import 'screens/app_shell.dart';
 import 'screens/login_screen.dart';
+import 'screens/username_setup_screen.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -70,6 +71,17 @@ class _AuthGate extends StatelessWidget {
     final state = context.watch<AppState>();
 
     if (state.isAuthenticated) {
+      final profile = state.userProfile;
+      if (profile == null) {
+        // Profile still loading from Firestore
+        return const Scaffold(
+          backgroundColor: TSColors.surface,
+          body: Center(child: CircularProgressIndicator(color: TSColors.primary)),
+        );
+      }
+      if (profile.username.isEmpty) {
+        return const UsernameSetupScreen();
+      }
       return const AppShell();
     } else {
       return const LoginScreen();

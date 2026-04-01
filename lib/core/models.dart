@@ -199,6 +199,7 @@ class StatusPulse {
 class UserProfile {
   final String name;
   final String initials;
+  final String username; // unique @handle
   final String? photoUrl;
   final int checkinCount;
   final int beaconsLit;
@@ -211,6 +212,7 @@ class UserProfile {
   const UserProfile({
     required this.name,
     required this.initials,
+    this.username = '',
     this.photoUrl,
     this.checkinCount = 0,
     this.beaconsLit = 0,
@@ -267,7 +269,8 @@ class UserProfile {
     }
     return UserProfile(
       name: name,
-      initials: _computeInitials(name),
+      initials: computeInitials(name),
+      username: (data['username'] as String?) ?? '',
       photoUrl: photoUrl,
       checkinCount: (data['checkinCount'] is num) ? (data['checkinCount'] as num).toInt() : 0,
       beaconsLit: (data['beaconsLit'] is num) ? (data['beaconsLit'] as num).toInt() : 0,
@@ -278,7 +281,7 @@ class UserProfile {
     );
   }
 
-  static String _computeInitials(String name) {
+  static String computeInitials(String name) {
     final parts = name.trim().split(' ');
     if (parts.length >= 2) {
       return '${parts[0][0]}${parts[1][0]}'.toUpperCase();
@@ -289,6 +292,7 @@ class UserProfile {
   UserProfile copyWith({
     String? name,
     String? initials,
+    String? username,
     String? photoUrl,
     int? checkinCount,
     int? beaconsLit,
@@ -300,6 +304,7 @@ class UserProfile {
     return UserProfile(
       name: name ?? this.name,
       initials: initials ?? this.initials,
+      username: username ?? this.username,
       photoUrl: photoUrl ?? this.photoUrl,
       checkinCount: checkinCount ?? this.checkinCount,
       beaconsLit: beaconsLit ?? this.beaconsLit,

@@ -181,6 +181,7 @@ class FirebaseDataService {
     required String name,
     required String email,
     String? photoUrl,
+    String? username,
   }) async {
     final docRef = _firestore.collection('users').doc(userId);
     final doc = await docRef.get();
@@ -199,6 +200,7 @@ class FirebaseDataService {
         'name': name,
         'email': email,
         'photoUrl': photoUrl,
+        'username': username ?? '',
         'createdAt': FieldValue.serverTimestamp(),
         'lastLoginAt': FieldValue.serverTimestamp(),
         'checkinCount': 0,
@@ -501,18 +503,82 @@ class FirebaseDataService {
       if (doc.exists) {
         final data = doc.data()!;
         final name = data['name'] as String? ?? 'User';
-        final parts = name.trim().split(' ');
-        final initials = parts.length >= 2
-            ? '${parts[0][0]}${parts[1][0]}'.toUpperCase()
-            : name.isNotEmpty
-                ? name[0].toUpperCase()
-                : 'U';
-        return {'name': name, 'initials': initials};
+        return {'name': name, 'initials': UserProfile.computeInitials(name)};
       }
     } catch (e) {
       debugPrint('Error getting user info: $e');
     }
     return {'name': 'User', 'initials': 'U'};
+  }
+
+  // ── Username Uniqueness ──
+
+  /// Returns true if the username is not yet taken.
+  Future<bool> isUsernameAvailable(String username) async {
+    final doc = await _firestore
+        .collection('usernames')
+        .doc(username.toLowerCase())
+        .get();
+    return !doc.exists;
+  }
+
+  /// Atomically claims a username for a user.
+  /// Deletes [oldUsername] doc if provided (for edits).
+  /// Throws 'username-taken' if claimed by a different user.
+  Future<void> claimUsername({
+    required String userId,
+    required String username,
+    String? oldUsername,
+  }) async {
+    final newRef = _firestore
+        .collection('usernames')
+        .doc(username.toLowerCase());
+    final userRef = _firestore.collection('users').doc(userId);
+
+    await _firestore.runTransaction((tx) async {
+      final snap = await tx.get(newRef);
+      if (snap.exists && snap.data()?['userId'] != userId) {
+        throw Exception('username-taken');
+      }
+      if (oldUsername != null && oldUsername.isNotEmpty) {
+        final oldRef = _firestore
+            .collection('usernames')
+            .doc(oldUsername.toLowerCase());
+        tx.delete(oldRef);
+      }
+      tx.set(newRef, {'userId': userId});
+      tx.set(userRef, {'username': username.toLowerCase()}, SetOptions(merge: true));
+    });
+  }
+
+  /// Prefix search on the users collection by username.
+  /// Returns up to [limit] results as maps of {userId, name, username, initials}.
+  Future<List<Map<String, dynamic>>> searchUsersByUsername(
+    String prefix, {
+    int limit = 10,
+  }) async {
+    if (prefix.isEmpty) return [];
+    final lower = prefix.toLowerCase();
+    final end = lower.substring(0, lower.length - 1) +
+        String.fromCharCode(lower.codeUnitAt(lower.length - 1) + 1);
+
+    final snapshot = await _firestore
+        .collection('users')
+        .where('username', isGreaterThanOrEqualTo: lower)
+        .where('username', isLessThan: end)
+        .limit(limit)
+        .get();
+
+    return snapshot.docs.map((doc) {
+      final data = doc.data();
+      final name = (data['name'] as String?) ?? 'User';
+      return {
+        'userId': doc.id,
+        'name': name,
+        'username': (data['username'] as String?) ?? '',
+        'initials': UserProfile.computeInitials(name),
+      };
+    }).toList();
   }
 
   // ══════════════════════════════════════════════════════════════
