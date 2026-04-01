@@ -1,0 +1,87 @@
+This **Product Requirements Document (PRD)** serves as the blueprint for **ThirdSpace**, focusing on high-speed development (2-month MVP) and the core "Social Gravity" engine.
+
+---
+
+# 📄 Product Requirements Document: ThirdSpace (v1.0)
+
+**Project Lead:** Gemini & Founder  
+**Status:** Draft / Conceptual  
+**Priority:** Moderate (Social Crisis Responsive)
+
+---
+
+## 1. Executive Summary
+**ThirdSpace** is a real-time "Social Gravity" map designed to combat the loneliness epidemic. Unlike static maps (Google Maps) or event boards (Meetup), ThirdSpace shows **where the people are right now.** It facilitates low-stakes, non-transactional human interaction for remote workers and urban transplants.
+
+## 2. Target Audience
+* **The "Digital Nomad" & Remote Worker:** Needs a place to work that isn't their kitchen table but offers social "background noise."
+* **The "New-to-City" Expat:** Looking for low-friction ways to meet people without the pressure of a 1-on-1 "friend date."
+* **The "AI-Fatigued" Gen Z:** Craving physical presence and authentic "vibes" over curated social media feeds.
+
+---
+
+## 3. Core Features (The MVP Scope)
+
+### 3.1 The "Social Gravity" Map
+* **Real-Time Heatmap:** Visual representation of activity. Areas glow brighter based on "Check-ins" and "Active Beacons."
+* **Vibe Tags:** Venues aren't categorized by "Food/Drink," but by atmosphere: *#DeepWork, #SocialBuzz, #CreativeFlow, #QuietContemplation.*
+* **Live Occupancy:** Integration with venue APIs or user-reported data to show "Crowd Density."
+
+### 3.2 "The Beacon" (User-Generated Meetups)
+* **Drop a Pin:** Users can host a spontaneous event (e.g., "I'm reading at the park, come say hi").
+* **Capacity Limits:** Creators set a "Table Size" (e.g., 2–6 people) to keep it intimate and low-stakes.
+* **Auto-Expiration:** Beacons vanish after 3 hours to ensure map accuracy.
+
+### 3.3 The "Vibe Check" (Proof of Presence)
+* **Proximity Check-In:** Users must be within 50 meters to "Check-in" and update the venue's status.
+* **Status Updates:** Users can leave 140-character "Status Pulses" (e.g., *"Great playlist at Cafe Nero right now, lots of open outlets"*).
+
+---
+
+## 4. Monetization Modules (The "Circle" Model)
+
+### 4.1 B2B: Venue Partner Dashboard
+* **The "Boost" Button:** Venues pay to increase their "Gravity" glow on the map during off-peak hours.
+* **Analytics:** Insights into the demographics and "Vibe" preferences of people nearby.
+
+### 4.2 B2C: The "Citizen" Subscription
+* **Priority Beacons:** Subscribers’ events stay at the top of the "Active Now" list.
+* **The "Community Pass":** Discounted entry or "Reserved Seating" at partner ThirdSpaces.
+
+---
+
+## 5. Technical Stack (The 2-Month Build)
+* **Frontend:** React Native (Cross-platform iOS/Android) for rapid deployment.
+* **Backend:** Firebase or Supabase (Real-time database and Auth).
+* **Mapping:** Mapbox SDK (More customizable and "social" aesthetic than Google Maps).
+* **Location:** Geofencing for "Presence Verification."
+
+---
+
+## 6. Success Metrics (KPIs)
+* **Stickiness (DAU/MAU):** How often users check the map before leaving their house.
+* **Conversion to Physical:** Ratio of "Map Views" to "Physical Check-ins."
+* **Beacon Density:** Average number of user-created events per square mile in the Alpha zone.
+
+---
+
+## 7. Safety & Community Standards
+* **The "Handshake" System:** Users must request to join a Beacon; the host accepts based on a minimal profile.
+* **Report & Ghosting Logic:** Users who frequently "Ghost" (sign up and don't show) lose the ability to join Beacons for 24 hours.
+* **Zero-Algorithm Feed:** The map is sorted by **Distance** and **Time**, not by an engagement algorithm.
+
+---
+
+## 8. 8-Week Launch Timeline
+
+| Week | Milestone | Focus |
+| :--- | :--- | :--- |
+| **1-2** | **Logic & Wireframes** | Map UI design and User Flow for "Lighting a Beacon." |
+| **3-4** | **The Alpha Map** | Integrating Mapbox and Geofencing for Check-ins. |
+| **5-6** | **The Social Layer** | Implementing User Profiles, Messaging, and the Beacon Timer. |
+| **7** | **Beta Testing** | Soft launch in **one specific neighborhood** (e.g., Williamsburg or Shoreditch). |
+| **8** | **Full Launch** | Opening the "Venue Boost" dashboard for local cafe partners. |
+
+---
+
+> **The "Anti-Ghosting" Rule:** If a user "lights a Beacon" but leaves the geofenced area for more than 10 minutes, the Beacon is automatically extinguished. This maintains the "Real-Time" integrity of the map.

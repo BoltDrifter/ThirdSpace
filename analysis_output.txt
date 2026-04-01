@@ -1,0 +1,432 @@
+﻿Analyzing ThirdSpace...
+
+  error - lib\screens\about_screen.dart:32:31 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\about_screen.dart:32:32 - Expected to find ','. - expected_token
+  error - lib\screens\about_screen.dart:32:32 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\about_screen.dart:32:33 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\about_screen.dart:32:40 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\about_screen.dart:32:48 - Expected to find ','. - expected_token
+  error - lib\screens\about_screen.dart:43:50 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\about_screen.dart:43:51 - Expected to find ','. - expected_token
+  error - lib\screens\about_screen.dart:43:51 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\about_screen.dart:43:52 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\about_screen.dart:43:59 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\about_screen.dart:43:67 - Expected to find ','. - expected_token
+  error - lib\screens\about_screen.dart:78:24 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\about_screen.dart:78:25 - Expected to find ','. - expected_token
+  error - lib\screens\about_screen.dart:78:25 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\about_screen.dart:78:26 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\about_screen.dart:78:33 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\about_screen.dart:78:41 - Expected to find ','. - expected_token
+  error - lib\screens\activity_screen.dart:152:35 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\activity_screen.dart:152:36 - Expected to find ','. - expected_token
+  error - lib\screens\activity_screen.dart:152:36 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\activity_screen.dart:152:37 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\activity_screen.dart:152:44 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\activity_screen.dart:152:52 - Expected to find ','. - expected_token
+  error - lib\screens\activity_screen.dart:275:20 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\activity_screen.dart:275:21 - Expected to find ','. - expected_token
+  error - lib\screens\activity_screen.dart:275:21 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\activity_screen.dart:275:22 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\activity_screen.dart:275:29 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\activity_screen.dart:275:37 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:53:37 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:53:38 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:53:38 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacon_requests_screen.dart:53:39 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:53:46 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:53:54 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:93:39 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:93:40 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:93:40 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacon_requests_screen.dart:93:41 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:93:48 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:93:56 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:208:36 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:208:37 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:208:37 - Too many positional arguments: 1 expected, but 4 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacon_requests_screen.dart:208:38 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:208:45 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:208:53 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:209:39 - Expected an identifier. - missing_identifier
+  error - lib\screens\beacon_requests_screen.dart:219:36 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:219:37 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:219:37 - Too many positional arguments: 1 expected, but 4 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacon_requests_screen.dart:219:38 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:219:45 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:219:53 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:220:39 - Expected an identifier. - missing_identifier
+  error - lib\screens\beacon_requests_screen.dart:334:22 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:334:23 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:334:23 - Too many positional arguments: 1 expected, but 4 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacon_requests_screen.dart:334:24 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:334:29 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:334:29 - The named parameter 'color' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'color'. - undefined_named_parameter
+  error - lib\screens\beacon_requests_screen.dart:334:55 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:334:56 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:334:57 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:346:22 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:346:23 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:346:23 - Too many positional arguments: 1 expected, but 4 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacon_requests_screen.dart:346:24 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:346:31 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:346:39 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:346:63 - Expected an identifier. - missing_identifier
+  error - lib\screens\beacon_requests_screen.dart:525:31 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:525:32 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:525:32 - Too many positional arguments: 1 expected, but 4 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacon_requests_screen.dart:525:33 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:525:40 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacon_requests_screen.dart:525:48 - Expected to find ','. - expected_token
+  error - lib\screens\beacon_requests_screen.dart:525:72 - Expected an identifier. - missing_identifier
+  error - lib\screens\beacons_screen.dart:140:24 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:140:25 - Expected to find ','. - expected_token
+  error - lib\screens\beacons_screen.dart:140:25 - Too many positional arguments: 1 expected, but 4 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacons_screen.dart:140:26 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:140:33 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:140:41 - Expected to find ','. - expected_token
+  error - lib\screens\beacons_screen.dart:140:65 - Expected an identifier. - missing_identifier
+  error - lib\screens\beacons_screen.dart:266:26 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:266:27 - Expected to find ','. - expected_token
+  error - lib\screens\beacons_screen.dart:266:27 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacons_screen.dart:266:28 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:266:35 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:266:43 - Expected to find ','. - expected_token
+  error - lib\screens\beacons_screen.dart:312:20 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:312:21 - Expected to find ','. - expected_token
+  error - lib\screens\beacons_screen.dart:312:21 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacons_screen.dart:312:22 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:312:29 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:312:37 - Expected to find ','. - expected_token
+  error - lib\screens\beacons_screen.dart:322:20 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:322:21 - Expected to find ','. - expected_token
+  error - lib\screens\beacons_screen.dart:322:21 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacons_screen.dart:322:22 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:322:29 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:322:37 - Expected to find ','. - expected_token
+  error - lib\screens\beacons_screen.dart:454:29 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:454:30 - Expected to find ','. - expected_token
+  error - lib\screens\beacons_screen.dart:454:30 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\beacons_screen.dart:454:31 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:454:38 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\beacons_screen.dart:454:46 - Expected to find ','. - expected_token
+  error - lib\screens\chat_screen.dart:112:33 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\chat_screen.dart:112:34 - Expected to find ','. - expected_token
+  error - lib\screens\chat_screen.dart:112:34 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\chat_screen.dart:112:35 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\chat_screen.dart:112:42 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\chat_screen.dart:112:50 - Expected to find ','. - expected_token
+  error - lib\screens\chat_screen.dart:180:41 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\chat_screen.dart:180:42 - Expected to find ','. - expected_token
+  error - lib\screens\chat_screen.dart:180:42 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\chat_screen.dart:180:43 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\chat_screen.dart:180:50 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\chat_screen.dart:180:58 - Expected to find ','. - expected_token
+  error - lib\screens\drop_beacon_screen.dart:108:35 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\drop_beacon_screen.dart:108:36 - Expected to find ','. - expected_token
+  error - lib\screens\drop_beacon_screen.dart:108:36 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\drop_beacon_screen.dart:108:37 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\drop_beacon_screen.dart:108:44 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\drop_beacon_screen.dart:108:52 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:148:22 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:148:23 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:148:23 - Too many positional arguments: 1 expected, but 4 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\login_screen.dart:148:24 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:148:29 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:148:29 - The named parameter 'color' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'color'. - undefined_named_parameter
+  error - lib\screens\login_screen.dart:148:55 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:148:56 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:148:57 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:265:28 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:265:29 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:265:29 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\login_screen.dart:265:30 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:265:37 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:265:45 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:289:36 - Arguments of a constant creation must be constant expressions. Try making the argument a valid constant, or use 'new' to call the constructor. - const_with_non_constant_argument
+  error - lib\screens\login_screen.dart:289:36 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:289:37 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:289:37 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\login_screen.dart:289:38 - Invalid constant value. - invalid_constant
+  error - lib\screens\login_screen.dart:289:38 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:289:45 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:289:53 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:309:36 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:309:37 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:309:37 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\login_screen.dart:309:38 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:309:45 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:309:53 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:316:33 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:316:34 - Expected to find ','. - expected_token
+  error - lib\screens\login_screen.dart:316:34 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\login_screen.dart:316:35 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:316:42 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\login_screen.dart:316:50 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:273:22 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:273:23 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:273:23 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\map_screen.dart:273:24 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:273:31 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:273:39 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:371:29 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:371:30 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:371:30 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\map_screen.dart:371:31 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:371:38 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:371:46 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:534:21 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:534:22 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:534:22 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\map_screen.dart:534:23 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:534:30 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:534:38 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:693:14 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:693:15 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:693:15 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\map_screen.dart:693:16 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:693:23 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:693:31 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:791:31 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:791:32 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:791:32 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\map_screen.dart:791:33 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:791:40 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:791:48 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:812:20 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:812:21 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:812:21 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\map_screen.dart:812:22 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:812:29 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:812:37 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:823:20 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:823:21 - Expected to find ','. - expected_token
+  error - lib\screens\map_screen.dart:823:21 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\map_screen.dart:823:22 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:823:29 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\map_screen.dart:823:37 - Expected to find ','. - expected_token
+  error - lib\screens\messages_screen.dart:102:35 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\messages_screen.dart:102:36 - Expected to find ','. - expected_token
+  error - lib\screens\messages_screen.dart:102:36 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\messages_screen.dart:102:37 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\messages_screen.dart:102:44 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\messages_screen.dart:102:52 - Expected to find ','. - expected_token
+  error - lib\screens\messages_screen.dart:235:31 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\messages_screen.dart:235:32 - Expected to find ','. - expected_token
+  error - lib\screens\messages_screen.dart:235:32 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\messages_screen.dart:235:33 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\messages_screen.dart:235:40 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\messages_screen.dart:235:48 - Expected to find ','. - expected_token
+  error - lib\screens\messages_screen.dart:312:32 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\messages_screen.dart:312:33 - Expected to find ','. - expected_token
+  error - lib\screens\messages_screen.dart:312:33 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\messages_screen.dart:312:34 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\messages_screen.dart:312:41 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\messages_screen.dart:312:49 - Expected to find ','. - expected_token
+  error - lib\screens\notifications_screen.dart:52:35 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\notifications_screen.dart:52:36 - Expected to find ','. - expected_token
+  error - lib\screens\notifications_screen.dart:52:36 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\notifications_screen.dart:52:37 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\notifications_screen.dart:52:44 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\notifications_screen.dart:52:52 - Expected to find ','. - expected_token
+  error - lib\screens\notifications_screen.dart:116:37 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\notifications_screen.dart:116:38 - Expected to find ','. - expected_token
+  error - lib\screens\notifications_screen.dart:116:38 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\notifications_screen.dart:116:39 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\notifications_screen.dart:116:46 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\notifications_screen.dart:116:54 - Expected to find ','. - expected_token
+  error - lib\screens\notifications_screen.dart:359:30 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\notifications_screen.dart:359:31 - Expected to find ','. - expected_token
+  error - lib\screens\notifications_screen.dart:359:31 - Too many positional arguments: 1 expected, but 4 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\notifications_screen.dart:359:32 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\notifications_screen.dart:359:39 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\notifications_screen.dart:359:47 - Expected to find ','. - expected_token
+  error - lib\screens\notifications_screen.dart:359:71 - Expected an identifier. - missing_identifier
+  error - lib\screens\privacy_safety_screen.dart:31:29 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\privacy_safety_screen.dart:31:30 - Expected to find ','. - expected_token
+  error - lib\screens\privacy_safety_screen.dart:31:30 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\privacy_safety_screen.dart:31:31 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\privacy_safety_screen.dart:31:38 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\privacy_safety_screen.dart:31:46 - Expected to find ','. - expected_token
+  error - lib\screens\privacy_safety_screen.dart:127:29 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\privacy_safety_screen.dart:127:30 - Expected to find ','. - expected_token
+  error - lib\screens\privacy_safety_screen.dart:127:30 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\privacy_safety_screen.dart:127:31 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\privacy_safety_screen.dart:127:38 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\privacy_safety_screen.dart:127:46 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:129:41 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:129:42 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:129:42 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\profile_screen.dart:129:43 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:129:50 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:129:58 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:149:30 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:149:31 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:149:31 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\profile_screen.dart:149:32 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:149:39 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:149:47 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:524:22 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:524:23 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:524:23 - Too many positional arguments: 0 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\profile_screen.dart:524:24 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:524:29 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:524:29 - The named parameter 'color' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'color'. - undefined_named_parameter
+  error - lib\screens\profile_screen.dart:524:55 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:524:56 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:524:57 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:540:22 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:540:23 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:540:23 - Too many positional arguments: 0 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\profile_screen.dart:540:24 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:540:29 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:540:29 - The named parameter 'color' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'color'. - undefined_named_parameter
+  error - lib\screens\profile_screen.dart:540:55 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:540:56 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:540:57 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:545:28 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:545:29 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:545:29 - Too many positional arguments: 0 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\profile_screen.dart:545:30 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:545:35 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:545:35 - The named parameter 'color' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'color'. - undefined_named_parameter
+  error - lib\screens\profile_screen.dart:545:61 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:545:62 - Expected to find ','. - expected_token
+  error - lib\screens\profile_screen.dart:545:63 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:546:17 - The named parameter 'border' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'border'. - undefined_named_parameter
+  error - lib\screens\profile_screen.dart:550:17 - The named parameter 'contentPadding' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'contentPadding'. - undefined_named_parameter
+  error - lib\screens\profile_screen.dart:552:13 - Expected to find ']'. - expected_token
+  error - lib\screens\profile_screen.dart:553:11 - Expected an identifier. - missing_identifier
+  error - lib\screens\profile_screen.dart:553:11 - Expected to find ')'. - expected_token
+  error - lib\screens\profile_screen.dart:555:9 - The named parameter 'actions' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'actions'. - undefined_named_parameter
+  error - lib\screens\profile_screen.dart:557:44 - Undefined name 'ctx'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:572:29 - Undefined name 'ctx'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\profile_screen.dart:583:7 - Expected to find ';'. - expected_token
+  error - lib\screens\profile_screen.dart:583:8 - Expected an identifier. - missing_identifier
+  error - lib\screens\profile_screen.dart:583:8 - Expected to find ';'. - expected_token
+  error - lib\screens\profile_screen.dart:583:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - lib\screens\profile_screen.dart:584:5 - Expected an identifier. - missing_identifier
+  error - lib\screens\profile_screen.dart:584:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - lib\screens\signup_screen.dart:175:31 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:175:32 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:175:32 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\signup_screen.dart:175:33 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:175:40 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:175:48 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:215:28 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:215:29 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:215:29 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\signup_screen.dart:215:30 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:215:37 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:215:45 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:238:36 - Arguments of a constant creation must be constant expressions. Try making the argument a valid constant, or use 'new' to call the constructor. - const_with_non_constant_argument
+  error - lib\screens\signup_screen.dart:238:36 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:238:37 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:238:37 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\signup_screen.dart:238:38 - Invalid constant value. - invalid_constant
+  error - lib\screens\signup_screen.dart:238:38 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:238:45 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:238:53 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:259:36 - Arguments of a constant creation must be constant expressions. Try making the argument a valid constant, or use 'new' to call the constructor. - const_with_non_constant_argument
+  error - lib\screens\signup_screen.dart:259:36 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:259:37 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:259:37 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\signup_screen.dart:259:38 - Invalid constant value. - invalid_constant
+  error - lib\screens\signup_screen.dart:259:38 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:259:45 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:259:53 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:279:36 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:279:37 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:279:37 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\signup_screen.dart:279:38 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:279:45 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:279:53 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:286:33 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:286:34 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:286:34 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\signup_screen.dart:286:35 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:286:42 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:286:50 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:306:36 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:306:37 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:306:37 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\signup_screen.dart:306:38 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:306:45 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:306:53 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:313:33 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:313:34 - Expected to find ','. - expected_token
+  error - lib\screens\signup_screen.dart:313:34 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\signup_screen.dart:313:35 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:313:42 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\signup_screen.dart:313:50 - Expected to find ','. - expected_token
+  error - lib\screens\venue_detail_screen.dart:105:35 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:105:36 - Expected to find ','. - expected_token
+  error - lib\screens\venue_detail_screen.dart:105:36 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\venue_detail_screen.dart:105:37 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:105:44 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:105:52 - Expected to find ','. - expected_token
+  error - lib\screens\venue_detail_screen.dart:116:28 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:116:29 - Expected to find ','. - expected_token
+  error - lib\screens\venue_detail_screen.dart:116:29 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\venue_detail_screen.dart:116:30 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:116:37 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:116:45 - Expected to find ','. - expected_token
+  error - lib\screens\venue_detail_screen.dart:310:39 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:310:40 - Expected to find ','. - expected_token
+  error - lib\screens\venue_detail_screen.dart:310:40 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\venue_detail_screen.dart:310:41 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:310:48 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:310:56 - Expected to find ','. - expected_token
+  error - lib\screens\venue_detail_screen.dart:427:22 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:427:23 - Expected to find ','. - expected_token
+  error - lib\screens\venue_detail_screen.dart:427:23 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\screens\venue_detail_screen.dart:427:24 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:427:31 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\screens\venue_detail_screen.dart:427:39 - Expected to find ','. - expected_token
+  error - lib\widgets\shared_widgets.dart:237:20 - Undefined name '$'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\widgets\shared_widgets.dart:237:21 - Expected to find ','. - expected_token
+  error - lib\widgets\shared_widgets.dart:237:21 - Too many positional arguments: 1 expected, but 3 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - lib\widgets\shared_widgets.dart:237:22 - Undefined name 'm'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\widgets\shared_widgets.dart:237:29 - Undefined name '$group2'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - lib\widgets\shared_widgets.dart:237:37 - Expected to find ','. - expected_token
+   info - lib\screens\app_shell.dart:108:31 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\app_shell.dart:109:31 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\app_shell.dart:276:35 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\app_shell.dart:277:35 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\app_shell.dart:277:54 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\beacon_requests_screen.dart:183:35 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\beacon_requests_screen.dart:184:35 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\beacon_requests_screen.dart:542:31 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\beacon_requests_screen.dart:543:31 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\chat_screen.dart:119:27 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\chat_screen.dart:275:33 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\chat_screen.dart:276:33 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\chat_screen.dart:337:25 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\login_screen.dart:188:35 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\login_screen.dart:189:35 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\login_screen.dart:281:15 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\login_screen.dart:302:15 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\map_screen.dart:303:37 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\messages_screen.dart:60:33 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\messages_screen.dart:61:33 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\messages_screen.dart:361:23 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\notifications_screen.dart:390:33 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\notifications_screen.dart:391:33 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\privacy_safety_screen.dart:57:13 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\privacy_safety_screen.dart:65:13 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\privacy_safety_screen.dart:73:13 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\privacy_safety_screen.dart:81:13 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\profile_screen.dart:109:41 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\profile_screen.dart:117:37 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\screens\profile_screen.dart:584:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - lib\screens\signup_screen.dart:231:15 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\signup_screen.dart:251:15 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\signup_screen.dart:272:15 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\signup_screen.dart:299:15 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\venue_detail_screen.dart:305:39 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\screens\venue_detail_screen.dart:306:39 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+   info - lib\services\firebase_service.dart:79:15 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - lib\widgets\shared_widgets.dart:150:21 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
+   info - lib\widgets\shared_widgets.dart:151:21 - Use 'const' literals as arguments to constructors of '@immutable' classes. Try adding 'const' before the literal. - prefer_const_literals_to_create_immutables
+
+428 issues found.
